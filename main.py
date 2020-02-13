@@ -55,7 +55,8 @@ def parse(message):
                     bot.send_message(message.chat.id, result[7])
                     bot.send_message(message.chat.id, result[19])
               except IndexError:
-                  print(resb)
+                    bot.send_message(message.chat.id, result[0].string)
+                    print(resb)
         break
 
 
